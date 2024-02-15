@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/img/foodlogo.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Restaurant</title>
+    <style>
+      .swiper {
+        padding: 0.5rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="home">
+      <!-- HEADER -->
+      <div class="header">
+        <a class="header__left--logo">
+          <img src="assets/img/logo.png" alt="" />
+        </a>
+
+        <div class="header__links">
+          <a href="#" class="header__link">Home</a>
+          <a href="#menu" class="header__link">Menu</a>
+          <a href="#reservation" class="header__link">Reservation</a>
+          <a href="#" class="header__link">Blog</a>
+          <a href="#" class="header__link">Gallery</a>
+          <a href="#" class="header__link">Contact</a>
+        </div>
+
+        <div class="header__right--cartandbtn">
+          <div class="header__cart" id="header__cart">
+            <img src="assets/img/cart.png" alt="" />
+            <span id="cart-quantity">0</span>
+            <!-- <div class="header__cart--group"></div> -->
+            <div id="cart-group" class="cart__group header__cart--group">
+              <div id="cart-list" class="cart__list"></div>
+
+              <div class="cart__btn">
+                <button id="cannelCart">Cannel</button>
+                <button>Buy</button>
+              </div>
+            </div>
+          </div>
+          <!-- LOG -->
+          <div class="home__loginUser">
+            <button class="header__btn header__btn--login" id="header__btn">
+              Login
+            </button>
+          </div>
+        </div>
+        <!-- NAV -->
+        <div class="header__toggleHeader">
+          <div class="header__toggle" id="header__toggle"></div>
+          <div class="header__toggle--menu" id="header__toggle--menu">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Reservation</a>
+            <a href="#">Blog</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+            <button class="header__toggle--btn">Login</button>
+          </div>
+        </div>
+      </div>
+      <!-- SLIDER -->
+      <div class="home-main">
+        <div class="home__banner home__introduce" id="reservation">
+          <p class="home__banner--title">
+            
+            Where there is good food, there is <span>HAPPINESS.</span>
+          </p>
+          <p class="home__banner--discribe">
+            Lorem ipsum dolor sit amet consectetur. Eget vel turpis sit diam
+            convallis nec non. Sollicitudin fringilla mauris sollicitudin in
+            aliquam.
+          </p>
+          <button class="home__banner--btn">Book Table</button>
+        </div>
+        <div class="home__shoptime">
+          <div class="home__shoptime--general">
+            <img src="assets/img/clock.png" alt="" />
+            <p class="home__shoptime--title">7:00 AM to 7:00 PM</p>
+            <p class="home__shoptime--discribe">Working Hours</p>
+          </div>
+          <div class="home__shoptime--general">
+            <img src="assets/img/locate.png" alt="" />
+            <p class="home__shoptime--title">C.P Delhi</p>
+            <p class="home__shoptime--discribe">Get Directions</p>
+          </div>
+          <div class="home__shoptime--general">
+            <img src="assets/img/phone.png" alt="" />
+            <p class="home__shoptime--title">+91 123456789</p>
+            <p class="home__shoptime--discribe">Contact us</p>
+          </div>
+        </div>
+        <div class="home__aboutUs">
+          <img src="assets/img/boutUs.png" alt="" />
+          <div class="home__aboutUs--content">
+            <p class="home__aboutUs--label">About US</p>
+            <p class="home__aboutUs--title">
+              The most essential part of a well-balanced diet is FOOD!
+            </p>
+            <p class="home__aboutUs--discribe">
+              Lorem ipsum dolor sit amet consectetur. Eget vel turpis sit diam
+              convallis nec non. Sollicitudin fringilla mauris sollicitudin in
+              aliquam. Lorem ipsum dolor sit amet consectetur. Eget vel turpis
+              sit diam convallis nec non. Sollicitudin fringilla mauris
+              sollicitudin in aliquam. Lorem ipsum dolor sit amet consectetur.
+              Eget vel turpis sit diam convallis nec non. Sollicitudin fringilla
+              mauris sollicitudin in aliquam.
+            </p>
+            <button class="home__aboutUs--btn">Read more</button>
+          </div>
+        </div>
+        <div class="home__chooseUs">
+          <p class="home__chooseUs--title">Why Choose Us</p>
+          <div class="home__chooseUs--boxs">
+            <div class="home__chooseUs--box">
+              <img src="assets/img/freshfood.png" alt="" />
+              <p class="home__chooseUs--boxTitle">Fresh Food</p>
+              <p class="home__chooseUs--boxDiscribe">
+                Lorem ipsum dolor sit amet consectetur. Eget vel turpis sitdiam
+                convallis nec non. Sollicitudin fringilla mauris sollicitudin in
+                uam. Lorem ipsum dolor sit amet consec.
+              </p>
+            </div>
+            <div class="home__chooseUs--box">
+              <img src="assets/img/supertaste.png" alt="" />
+              <p class="home__chooseUs--boxTitle">Super Taste</p>
+              <p class="home__chooseUs--boxDiscribe">
+                Lorem ipsum dolor sit amet consectetur. Eget vel turpis sitdiam
+                convallis nec non. Sollicitudin fringilla mauris sollicitudin in
+                uam. Lorem ipsum dolor sit amet consec.
+              </p>
+            </div>
+            <div class="home__chooseUs--box">
+              <img src="assets/img/specialoffers.png" alt="" />
+              <p class="home__chooseUs--boxTitle">Special Offers</p>
+              <p class="home__chooseUs--boxDiscribe">
+                Lorem ipsum dolor sit amet consectetur. Eget vel turpis sitdiam
+                convallis nec non. Sollicitudin fringilla mauris sollicitudin in
+                uam. Lorem ipsum dolor sit amet consec.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- PRODUCT -->
+        <div class="home__menu" id="menu">
+          <p class="home__menu--lable">Menu</p>
+          <p class="home__menu--title">Explore Our Menu</p>
+          <div class="home__menu--sessionsofday">
+            <input
+              type="button"
+              name="foodDay"
+              value="Breakfast"
+              class="inputsessionFood Breakfast"
+              id="breakfast"
+            />
+            <input
+              type="button"
+              name="foodDay"
+              value="Lunch"
+              class="inputsessionFood Lunch"
+              id="lunch"
+            />
+            <input
+              type="button"
+              name="foodDay"
+              value="Dinner"
+              class="inputsessionFood Dinner"
+              id="dinner"
+            />
+            <input
+              type="button"
+              name="foodDay"
+              value="Fastfood"
+              class="inputsessionFood Fastfood"
+              id="fastfood"
+            />
+          </div>
+          <!-- MENU -->
+          <div class="home__menu--allFood">
+            <!-- 1 -->
+            <div class="home__cardFood">
+              <img
+                src="assets/img/cardFood1.png"
+                alt=""
+                class="home__cardFoodImg"
+              />
+              <div class="home__cardFood--nameAndPrice">
+                <p class="home__cardFood--name">Fried Rice</p>
+                <p class="home__cardFood--price">$15</p>
+              </div>
+              <p class="home__cardFood--discribe">
+                Lorem ipsum dolor sit amet consectetur. Eget vel turpis sitdiam
+                convallis nec non.
+              </p>
+              <div class="home__cardFood--rateaddCart">
+                <div class="home__cardFood--rate">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <button>Add to Cart</button>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="home__cardFood">
+              <img
+                src="assets/img/cardFood1.png"
+                alt=""
+                class="home__cardFoodImg"
+              />
+              <div class="home__cardFood--nameAndPrice">
+                <p class="home__cardFood--name">Fried Rice</p>
+                <p class="home__cardFood--price">$15</p>
+              </div>
+              <p class="home__cardFood--discribe">
+                Lorem ipsum dolor sit amet consectetur. Eget vel turpis sitdiam
+                convallis nec non.
+              </p>
+              <div class="home__cardFood--rateaddCart">
+                <div class="home__cardFood--rate">
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                </div>
+                <button>Add to Cart</button>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="home__cardFood">
+              <img
+                src="assets/img/cardFood1.png"
+                alt=""
+                class="home__cardFoodImg"
+              />
+              <div class="home__cardFood--nameAndPrice">
+                <p class="home__cardFood--name">Fried Rice</p>
+                <p class="home__cardFood--price">$15</p>
+              </div>
+              <p class="home__cardFood--discribe">
+                Lorem ipsum dolor sit amet consectetur. Eget vel turpis sitdiam
+                convallis nec non.
+              </p>
+              <div class="home__cardFood--rateaddCart">
+                <div class="home__cardFood--rate">
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                </div>
+                <button>Add to Cart</button>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="home__cardFood">
+              <img
+                src="assets/img/cardFood1.png"
+                alt=""
+                class="home__cardFoodImg"
+              />
+              <div class="home__cardFood--nameAndPrice">
+                <p class="home__cardFood--name">Fried Rice</p>
+                <p class="home__cardFood--price">$15</p>
+              </div>
+              <p class="home__cardFood--discribe">
+                Lorem ipsum dolor sit amet consectetur. Eget vel turpis sitdiam
+                convallis nec non.
+              </p>
+              <div class="home__cardFood--rateaddCart">
+                <div class="home__cardFood--rate">
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                </div>
+                <button>Add to Cart</button>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="home__cardFood">
+              <img
+                src="assets/img/cardFood1.png"
+                alt=""
+                class="home__cardFoodImg"
+              />
+              <div class="home__cardFood--nameAndPrice">
+                <p class="home__cardFood--name">Fried Rice</p>
+                <p class="home__cardFood--price">$15</p>
+              </div>
+              <p class="home__cardFood--discribe">
+                Lorem ipsum dolor sit amet consectetur. Eget vel turpis sitdiam
+                convallis nec non.
+              </p>
+              <div class="home__cardFood--rateaddCart">
+                <div class="home__cardFood--rate">
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                </div>
+                <button>Add to Cart</button>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="home__cardFood">
+              <img
+                src="assets/img/cardFood1.png"
+                alt=""
+                class="home__cardFoodImg"
+              />
+              <div class="home__cardFood--nameAndPrice">
+                <p class="home__cardFood--name">Fried Rice</p>
+                <p class="home__cardFood--price">$15</p>
+              </div>
+              <p class="home__cardFood--discribe">
+                Lorem ipsum dolor sit amet consectetur. Eget vel turpis sitdiam
+                convallis nec non.
+              </p>
+              <div class="home__cardFood--rateaddCart">
+                <div class="home__cardFood--rate">
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                  <span>*</span>
+                </div>
+                <button>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <button class="home__menu--btn" id="home__menu--btn">
+            Browse All
+          </button>
+        </div>
+        <!-- menu modal -->
+        <div class="home__menu--modal">
+          <div class="home__menu-modal--container">
+            <div class="home__menu-modal--img">
+              <img src="${img}" alt="" />
+              <p class="home__menu-modal--desc">${desc}</p>
+            </div>
+            <div class="home__menu-modal--content">
+              <p class="home__menu-modal--title">${name}</p>
+              <div class="home__menu-modal--rate">
+                <span class="span-title">${rate}.0</span>
+                <div class="home__modal-rate--group">
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+              </div>
+              <div class="home__menu-modal--price">
+                <span>${formatNumber(price)}</span>
+              </div>
+              <div class="home__menu-modal--amount">
+                <p>Quantity</p>
+                <div class="home__modal-amount">
+                  <button
+                    class="home__modal-mount--decrease"
+                    onclick="decrease($price)"
+                  >
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+                  <input
+                    class="home__modal-mount--input"
+                    type="number"
+                    value="1"
+                    onblur="onblurInputMountModal($price)"
+                    min="1"
+                    oninput="validity.valid||(value='');"
+                  />
+                  <button
+                    class="home__modal-mount--increase"
+                    onclick="increase($price)"
+                  >
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="home__menu-modal--buy">
+                <button
+                  class="home__menu-modal--addCart"
+                  onclick="cartAdd('${id}')"
+                >
+                  <img src="./assets/img/cart.svg" alt="Cart icon" />
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+            <div class="home__menu-modal--close" onclick="closeAndOpen()" ;>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+        <div class="home__testimonal">
+          <p class="home__testimonal--label">Testimonal</p>
+          <p class="home__testimonal--title">What our customer say’s</p>
+
+          <!-- Swiper -->
+          <div class="swiper mySwiper home__testimonal--author">
+            <div class="swiper-wrapper" id="slideauthor"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <img src="assets/img/logo.png" alt="" />
+        <div class="footer__quicklinks">
+          <p class="footer__quicklinks--title">Quick Links</p>
+          <a href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">Reservation</a>
+          <a href="#">Blog</a>
+          <a href="#">Gallery</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer__aboutus">
+          <p class="footer__aboutus--title">About Us</p>
+          <p class="footer__aboutus--discribe">
+            Lorem ipsum dolor sit amet consectetur. Eget vel turpis sit diam
+            convallis nec non. Sollicitudin fringilla mauris sollicitudin in
+            aliquam. Lorem ipsum dolor sit amet consectetur. Eget vel turpis sit
+            diam convallis nec non.
+          </p>
+        </div>
+        <div class="footer__flowus">
+          <p class="footer__flowus--title">Follow Us</p>
+          <div class="footer__flowus--icons">
+            <a href="#!" class="footer__flowus--icon">
+              <img src="assets/img/facebook.png" alt="" />
+            </a>
+            <a href="#!" class="footer__flowus--icon">
+              <img src="assets/img/twitter.png" alt="" />
+            </a>
+            <a href="#!" class="footer__flowus--icon">
+              <img src="assets/img/linkedin.png" alt="" />
+            </a>
+            <a href="#!" class="footer__flowus--icon">
+              <img src="assets/img/instagram.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- loading api -->
+      <div class="loading-main">
+        <div id="loading"></div>
+      </div>
+      <div class="home-overlay"></div>
+      <div class="home__modalform" id="home__modalform">
+        <div class="home__form">
+          <div class="form">
+            <h2>Sign in</h2>
+            <div class="inputBox">
+              <input type="email" name="email" id="email" required="required" />
+              <span>Email</span>
+              <i></i>
+            </div>
+            <div class="inputBox">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                required="required"
+              />
+              <span>Username</span>
+              <i></i>
+            </div>
+            <div class="inputBox">
+              <input type="password" name="psw" id="psw" required="required" />
+              <span>Password</span>
+              <i></i>
+            </div>
+            <div class="links">
+              <a href="#">Forrgot Password</a>
+              <a href="#" class="signup" id="signup">Sign up</a>
+            </div>
+            <input type="submit" value="Login" class="login" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </body>
+</html>
